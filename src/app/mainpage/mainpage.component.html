@@ -1,0 +1,336 @@
+
+
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="/assets/hacettepe1.png" alt="" width="24" height="30" class="d-inline-block align-text-top">
+        Hacettepe
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <button [disabled]="this.loading" class="btn btn-xl" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">Filter</button>
+          </li>
+          <li class="nav-item">
+            <button [disabled]="this.loading"  (click)="this.resetFilter()"class="btn btn-xl">Reset Filters</button>
+          </li>
+
+        </ul>
+        <ul class="navbar-nav mx-auto">
+          <li  class="nav-item  ">
+            <button *ngIf="this.layerSelector==1"  (click)="LayerChange(0);this.layerSelector=0;" type="button" class="btn" >
+              Layer: Bing Maps
+            </button>
+          </li>
+          <li  class="nav-item  ">
+            <button *ngIf="this.layerSelector==0" (click)="LayerChange(1);this.layerSelector=1;" type="button" class="btn" >
+              Layer: OSM
+            </button>
+          </li>
+        </ul>
+        <ul class="navbar-nav ms-auto ">
+          <li  class="nav-item  ">
+            <button (click)="filteredTable()" type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+              Filtered Result in Table
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+  <div *ngIf="this.loading==true">
+      <app-spinner></app-spinner>
+  </div>
+   
+  <div id="popup" class="ol-popup">
+      <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+      <div id="popup-content"></div>
+    </div>
+
+      <div id="map" class="map"></div>
+
+  
+
+
+
+  <!-- modal -->
+
+
+
+   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Hospital Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div  class="modal-body">
+          <h5 style="text-align: center;">{{this.hospitalDetails.name}}</h5>
+          
+          <table class="table ">
+            <thead>
+
+            </thead>
+            <tbody>
+              <tr class="table-danger" *ngIf="this.hospitalDetails.status!='OPEN'">
+                
+                <td >Status</td>
+                <td>{{this.hospitalDetails.status}}</td>
+
+              </tr>
+              <tr class="table-success" *ngIf="this.hospitalDetails.status=='OPEN'">
+                
+                <td >Status</td>
+                <td>Open</td>
+
+              </tr>
+              <tr>
+                
+                <td>Type</td>
+                <td>{{this.hospitalDetails.type}}</td>
+
+              </tr>
+              <tr *ngIf="this.hospitalDetails.owner!=null">
+                
+                <td>Owner</td>
+                <td>{{this.hospitalDetails.owner}}</td>
+
+              </tr>
+              <tr>
+                
+                <td>Website</td>
+                <td><a href="" (click)="goToLink(this.hospitalDetails.website)">{{this.hospitalDetails.website}}</a></td>
+
+              </tr>
+              <tr>
+                
+                <td>State</td>
+                <td>{{this.hospitalDetails.state}}</td>
+
+              </tr>
+              <tr>
+                
+                <td>City</td>
+                <td>{{this.hospitalDetails.city}}</td>
+
+              </tr>
+              <tr>
+                
+                <td>County</td>
+                <td>{{this.hospitalDetails.county}}</td>
+
+              </tr>
+              <tr>
+                
+                <td>Address</td>
+                <td>{{this.hospitalDetails.address}}</td>
+
+              </tr>
+              <tr class="table-danger" *ngIf="this.hospitalDetails.population==-999">
+                
+                <td>Population</td>
+                <td>DATA NOT AVAILABLE</td>
+
+              </tr>
+              <tr *ngIf="this.hospitalDetails.population!=-999">
+                
+                <td>Population</td>
+                <td>{{this.hospitalDetails.population}}</td>
+
+              </tr>
+              <tr class="table-danger" *ngIf="this.hospitalDetails.helipad=='N'">
+                
+                <td >Helipad</td>
+                <td>{{this.hospitalDetails.helipad}}</td>
+
+              </tr>
+              <tr class="table-success" *ngIf="this.hospitalDetails.helipad=='Y'">
+                
+                <td >Helipad</td>
+                <td>Available</td>
+
+              </tr>
+
+
+
+            </tbody>
+          </table>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+        </div>
+      </div>
+    </div>
+  </div> 
+
+  <!-- end of modal -->
+
+  <!-- offcanvas- Filter -->
+
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+    <div class="offcanvas-header">
+      <h5 id="offcanvasTopLabel">Hospital Filter</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              Filter by Name
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <form [formGroup]="this.formState">
+                <input class="form-control" type="text" placeholder="Hospital Name" formControlName="HospitalName">
+                <div style="margin-top:20px" class="col text-center">
+                  <button *ngIf="this.formState.value.HospitalName!=''" class="btn btn-secondary " type="submit" (click)="filterByName()"  data-bs-target="#offcanvasTop" data-bs-dismiss="offcanvas" >Apply Filter</button>
+                </div>
+              </form>
+
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              Filter by State
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <form [formGroup]="this.formState">
+                <select class="form-select form-control" formControlName="HospitalState">
+                  <option value="" disabled  >Choose your State</option>
+                  <option *ngFor="let state of this.service.USStateList" [ngValue]="state.abbreviation" >{{state.name}}</option>
+                </select>
+                <div style="margin-top:20px" class="col text-center">
+                  <button *ngIf="this.formState.value.HospitalState!=''" class="btn btn-secondary " type="submit" (click)="filterByState()"  data-bs-target="#offcanvasTop" data-bs-dismiss="offcanvas" >Apply Filter</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              Filter by Type
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <form [formGroup]="this.formState">
+                <select class="form-select form-control" formControlName="HospitalType">
+                  <option value="" disabled  >Choose the Hospital Type</option>
+                  <option *ngFor="let type of this.service.HospitalTypes" [ngValue]="type" >{{type}}</option>
+                </select>
+                <div style="margin-top:20px" class="col text-center">
+                  <button *ngIf="this.formState.value.HospitalType!=''" class="btn btn-secondary " type="submit" (click)="filterByType()"  data-bs-target="#offcanvasTop" data-bs-dismiss="offcanvas" >Apply Filter</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+              Filter by Status
+            </button>
+          </h2>
+          <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <form [formGroup]="this.formState">
+                <select class="form-select form-control" formControlName="HospitalStatus">
+                  <option value="" disabled  >Choose the Hospital Status</option>
+                  <option [ngValue]="'OPEN'" >Open</option>
+                  <option [ngValue]="'CLOSED'" >Closed</option>
+                </select>
+                <div style="margin-top:20px" class="col text-center">
+                  <button *ngIf="this.formState.value.HospitalStatus!=''" class="btn btn-secondary " type="submit" (click)="filterByStatus()"  data-bs-target="#offcanvasTop" data-bs-dismiss="offcanvas" >Apply Filter</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top:50px;" class="offcanvas-footer">
+        <h5 id="offcanvasTopLabel">Usage</h5>
+        <p>The filtering does not limit the user to only make one per type.</p>
+        <p>Unless you reset the filters, the filtering will occur on the already filtered result.</p>
+        <p>You can filter multiple times on the same type where it's applicable. (For example by name)</p>
+        <p>If the filtered result is empty, the filter will not go through, so you can try again.</p>
+      </div>
+    </div>
+
+
+    <!-- offcanvas-filter-end -->
+
+  </div>
+
+
+
+  <!-- modal for table of the filtered results -->
+
+  <div *ngIf="this.isfiltered&&this.loading==false" class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+    <div class="modal-dialog modal-xl modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel2">Filtered Hospitals</h5>
+          <button (click)="this.drawTable=false" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <table *ngIf="this.drawTable" class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Hospital Name</th>
+                <th scope="col">Status</th>
+                <th scope="col">Type</th>
+                <th scope="col">State</th>
+                <th scope="col">City</th>
+                <th scope="col">Address</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+              <ng-container *ngFor="let hospital of this.listView; index as i">
+                <tr >
+                  <th scope="row">{{i+1}}</th>
+                  <td>{{hospital.name}}</td>
+                  <td>{{hospital.status}}</td>
+                  <td>{{hospital.type}}</td>
+                  <td>{{hospital.state}}</td>
+                  <td>{{hospital.city}}</td>
+                  <td>{{hospital.address}}</td>
+                </tr>
+              </ng-container>
+
+            </tbody>
+          </table>
+        </div>
+        <div class="modal-footer">
+          <button (click)="this.drawTable=false" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div *ngIf="this.loadFailed==true" style="position: absolute; left:78vh; top:20vh;" >
+  <h2>
+    LOAD FAILED PLEASE REFRESH THE PAGE
+  </h2>
+</div>
