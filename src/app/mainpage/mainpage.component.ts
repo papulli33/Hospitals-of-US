@@ -357,7 +357,7 @@ export class MainpageComponent implements OnInit {
     const map = new Map({
       layers: [
         new TileLayer({
-          source: new BingMaps({ key:'*********************',imagerySet: 'RoadOnDemand',}), 
+          source: new BingMaps({ key:'AldLVsmrJSEmL7U3ezhlVhhEPdIWBsKlQOj1t7yqPxOD6-CJYM81wGvcVX7fSkCI',imagerySet: 'RoadOnDemand',}), 
         }), this.vectorLayer
       ],
       overlays: [overlay],
