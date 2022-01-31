@@ -32,7 +32,7 @@
 
 ## Back-End Setup 
 <p><a href="https://github.com/dincer-ince/Hospitals-asp" target="_blank" rel="noreferrer"> Back-End Link </a></p>
-If you want to improve the project, the back-end will become much more important. But at the moment, there would be no back-end in the project. I added it because I wanted to improve the project.
+If you want to improve the project, the back-end will become much more important. But at the moment, there is not much to do back-end in the project. I added it because I wanted to improve the project.
 
 ### Setup
 - You need to install Microsoft .NET SDK 3.1.0. <a href="https://dotnet.microsoft.com/en-us/download/dotnet/3.1" target="_blank" rel="noreferrer">Download Microsoft .NET SDK 3.1.0</a>
