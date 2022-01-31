@@ -96,7 +96,7 @@ This is the project directory, the files and folders we are interested in order 
 
 ## Relationship between Back-End and Front-End
 
-<a><img src="https://i.imgur.com/PDCAjfQ.png" width="900" height="150"/></a>
+<a><img src="https://i.imgur.com/fU4HFpg.png" width="1000" height="150"/></a>
 
 
 
