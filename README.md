@@ -6,11 +6,11 @@
 
 ## Technologies used
 
-<a href="https://www.postgresql.org/" target="_blank" rel="noreferrer"> <img src="https://icon-library.com/images/postgresql-icon/postgresql-icon-12.jpg" alt="postgresql" width="300" height="200"/> </a> 
+<a href="https://www.postgresql.org/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/1200px-Postgresql_elephant.svg.png" alt="postgresql" width="200" height="200"/> </a> 
 - ### PostgreSQL
 **PostgreSQL** is an open source and completely free object-relational database system with powerful features and benefits. Taking advantage of the security, storability and scalability features of the SQL language, PostgreSQL is also used as a database manager in many areas.
 
-<a href="https://www.postman.com/" target="_blank" rel="noreferrer"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF45jyWte9UduavN70GHcaNrrctqhKDFC1mIdo2mVVxn4C_mEhgMx5kqw3jMeZem5t9A0&usqp=CAU" alt="postman" width="200" height="200"/> </a> 
+<a href="https://www.postman.com/" target="_blank" rel="noreferrer"> <img src="https://res.cloudinary.com/postman/image/upload/t_team_logo/v1629869194/team/2893aede23f01bfcbd2319326bc96a6ed0524eba759745ed6d73405a3a8b67a8" alt="postman" width="200" height="200"/> </a> 
 - ### Postman
 **Postman** is a tool called "rest client" used to share, test, document, monitor APIs without the need for long codes.
 
@@ -18,7 +18,7 @@
 - ### ASP.NET WebAPI
 **ASP.NET WebAPI** is a framework used to create services that can communicate over the HTTP protocol that can be consumed by numerous different types of clients (browsers, mobile phones, tablets, pc, etc.).
 
-<a href="https://angular.io/" target="_blank" rel="noreferrer"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTiTvC39iFN0YPwziixoRGxJrqdTmYH-YoqbylrmCi_Tfv88xqz2gEqN73AH-yJQ5on-c&usqp=CAU" width="200" height="200"/> </a> 
+<a href="https://angular.io/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/5/50/Angular-logo.png" width="200" height="200"/> </a> 
 - ### Angular
 **Angular** is an open-source JavaScript based MVC library provided by Google and developers around the world. In summary, it is a structural framework for dynamic web applications.
 
