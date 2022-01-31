@@ -32,31 +32,41 @@
 
 ## Back-End Setup 
 <p><a href="https://github.com/dincer-ince/Hospitals-asp" target="_blank" rel="noreferrer"> Back-End Link </a></p>
-Eğer projeyi geliştirmek isterseniz back-end çok daha önemli hale gelecektir. Fakat şu anlık projede back-end olmasa da olurdu.Ben projeyi geliştirmek istediğim için ekledim.
+If you want to improve the project, the back-end will become much more important. But at the moment, there would be no back-end in the project. I added it because I wanted to improve the project.
 
 ### Setup
-- Microsoft .NET SDK 3.1.0 kurmanız gerekmektedir. <a href="https://dotnet.microsoft.com/en-us/download/dotnet/3.1" target="_blank" rel="noreferrer">Download Microsoft .NET SDK 3.1.0</a>
-- ASP.NET Core Runtime 3.1.0 kurulmalıdır. Bunun içinde yukarıdaki linkten ilgili kurulum yapılmalıdır.
-- Daha sonra Visual Studio Code üzerinden proje açılır ve terminaline "dotnet build" yazılır.
-- Ve projeyi "https://localhost:5001/" çalıştırmak için "**dotnet watch run**" yazıp projeyi çalıştırmanız yeterli olacaktır.
+- You need to install Microsoft .NET SDK 3.1.0. <a href="https://dotnet.microsoft.com/en-us/download/dotnet/3.1" target="_blank" rel="noreferrer">Download Microsoft .NET SDK 3.1.0</a>
+- ASP.NET Core Runtime 3.1.0 must be installed. In this, the relevant installation should be done from the link above.
+- Then the project is opened via Visual Studio Code and "dotnet build" is written to the terminal.
+- And to run the project "https://localhost:5001/", simply type "**dotnet watch run**" and run the project.
+
+
+### Understanding The Project
+<a><img src="https://i.imgur.com/AFyZ0ld.png" width="300" height="500"/></a>
+
+- The Controllers folder is where the API manages the http requests
+- Inside of it there is the hospitalController.cs file which controls the table in the database that holds the hospitals, as there is only one table in the database, there is only need for one controller at this moment.
+- The Models folder hosts the model for the table which we interact with, the model file itself is just table columns as variables.
+- There is also the context file which is what we interact with in the controller, It uses the model to make sense of the database table and helps to manipulate our data.
+
 
 ## Front-End Setup
-Bu proje için sadece front-end kurmamız bu proje için yeterlidir. Projenin back-end'i ve veritabanı statik veri çekmek içindir.
+For this project, we only need to install the front-end for this project. The back-end of the project and the database are for pulling static data.
 
-### Projenin Kurulması İçin İndirilmesi Gereken Teknolojiler
-- Visual Stuio Code'u bilgisayarınıza kurun. <a href="https://code.visualstudio.com/download" target="_blank" rel="noreferrer">Download Visual Stuio Code</a>
-- Node.js'i bilgisayarınıza kurun. <a href="https://nodejs.org/en/" target="_blank" rel="noreferrer">Download Node.js</a>
-> Node.js kurulumu sırasında karşınıza çıkacak olan tüm seçenkleri seçin.
-- Node.js kurduktan sora bilgisayarınıza **npm** de indirilmiş olması lazımdır.
-- Angular'ı indirmek için terminali açıp "**npm install -g @angular/cli**" yazmanız gerekmektedir. 
+### Technologies Required to Download to Install the Project
+- Install Visual Stuio Code on your computer. <a href="https://code.visualstudio.com/download" target="_blank" rel="noreferrer">Download Visual Stuio Code</a>
+- Install Node.js on your computer. <a href="https://nodejs.org/en/" target="_blank" rel="noreferrer">Download Node.js</a>
+> Select all the options that will appear during the Node.js installation.
+- After installing Node.js, **npm** should be downloaded to your computer.
+- To download Angular, you need to open terminal and type "**npm install -g @angular/cli**".
 
 ### Setup
-- Github'tan projeyi bilgisayarınıza clone'layın.
-- Clone'lenmiş projenin directory'sini gidin ve Visual Studio Code üzerinden açın.
-- Projeyi açtıktan sonra terminali açın ve "**npm install**" yazın.
-- Kurulum bittikten sonra yine aynı şekilde "**ng update**" yazın 
-- Yine aynı şekilde kurulumdan sonra "**npm run build**" yazın ve en son "**ng build**" yazın.
-- Daha sonra kurulum bittikten sonra "**ng serve --o**" yazarak çalıştırdıktan sonra projeyi "http://localhost:4200/" üzerinden görebilirsiniz. 
+- Clone the project from Github to your computer.
+- Go to the directory of the cloned project and open it via Visual Studio Code.
+- After opening the project open terminal and type "**npm install**".
+- After the installation is finished, type "**ng update**" in the same way
+- In the same way, type "**npm run build**" after installation and write "**ng build**" last.
+- After the installation is finished, you can see the project on "http://localhost:4200/" after running it by typing "**ng serve --o**".
 
 ### Understanding The Project
 <a><img src="https://i.imgur.com/QWnaTb1.png" width="300" height="500"/></a>
@@ -78,5 +88,6 @@ This is the project directory, the files and folders we are interested in order 
 - Inside mainpage folder there is mainpage.component.ts file which contains the logic of the component, this file is where to write the functions on.
 - In the mainpage.component.html file, there is the template of the website, it contains all the html of the project except the spinner.
 - The mainpage.component.css, includes the stylesheet of the component.
+
 
 
