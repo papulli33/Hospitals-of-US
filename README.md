@@ -4,11 +4,15 @@
 
   Although the project does not work with up-to-date data at the moment, we plan to develop it and bring it to that level in the future.
 
+> **Website Link**: https://hospitals-hacettepe.herokuapp.com/
+
 ## Technologies used
 
 <a href="https://www.postgresql.org/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/1200px-Postgresql_elephant.svg.png" alt="postgresql" width="200" height="200"/> </a> 
 - ### PostgreSQL
 **PostgreSQL** is an open source and completely free object-relational database system with powerful features and benefits. Taking advantage of the security, storability and scalability features of the SQL language, PostgreSQL is also used as a database manager in many areas.
+
+> **Link of Dataset Used in the Project**: https://www.kaggle.com/andrewmvd/us-hospital-locations
 
 <a href="https://www.postman.com/" target="_blank" rel="noreferrer"> <img src="https://res.cloudinary.com/postman/image/upload/t_team_logo/v1629869194/team/2893aede23f01bfcbd2319326bc96a6ed0524eba759745ed6d73405a3a8b67a8" alt="postman" width="200" height="200"/> </a> 
 - ### Postman
@@ -31,7 +35,8 @@
 **OpenLayers** is a simple open-source JavaScript library with no server-side dependencies that allows us to develop functional map applications to display map data in most modern web browsers.
 
 ## Back-End Setup 
-<p><a href="https://github.com/dincer-ince/Hospitals-asp" target="_blank" rel="noreferrer"> Back-End Link </a></p>
+> **Back-End Link**: https://github.com/dincer-ince/Hospitals-asp
+> 
 If you want to improve the project, the back-end will become much more important. But at the moment, there is not much to do back-end in the project. I added it because I wanted to improve the project.
 
 ### Setup
@@ -88,6 +93,10 @@ This is the project directory, the files and folders we are interested in order 
 - Inside mainpage folder there is mainpage.component.ts file which contains the logic of the component, this file is where to write the functions on.
 - In the mainpage.component.html file, there is the template of the website, it contains all the html of the project except the spinner.
 - The mainpage.component.css, includes the stylesheet of the component.
+
+## Relationship between Back-End and Front-End
+
+<a><img src="https://i.imgur.com/PDCAjfQ.png" width="900" height="150"/></a>
 
 
 
