@@ -1,9 +1,14 @@
-# Hospitals of US
+# PROJECT AND TUTORIAL
 
-  This project was designed and created for you to get information about hospitals. Its purpose is to make people's lives easier. It allows you to open it before going to the hospital and check the status of the hospitals from this application, or when you go to a city you do not know, you get information about the address, type, status of the hospitals in that region.
+## Introduction:
 
-  Although the project does not work with up-to-date data at the moment, we plan to develop it and bring it to that level in the future.
-
+- ### Context - why this project?
+In recent days, pandemic and COVID-19 have become one of the normals of our lives. Hospitals have become much more important since this disease entered our lives. That's why we wanted to do this project that will make life easier for people both in COVID-19 days and in normal life. For this, we chose United States, which is one of the countries where the disease is most common.
+- ### Project Aim & Goals
+ This project was designed and created for you to get information about hospitals. Its purpose is to make people's lives easier. It allows you to open it before going to the hospital and check the status of the hospitals from this application, or when you go to a city you do not know, you get information about the address, type, status of the hospitals in that region.
+ 
+ Although the project does not work with up-to-date data at the moment, we plan to develop it and bring it to that level in the future.
+ 
 > **Website Link**: https://hospitals-hacettepe.herokuapp.com/
 
 ## Technologies used
@@ -12,11 +17,15 @@
 - ### PostgreSQL
 **PostgreSQL** is an open source and completely free object-relational database system with powerful features and benefits. Taking advantage of the security, storability and scalability features of the SQL language, PostgreSQL is also used as a database manager in many areas.
 
+> **For Download PostgreSQL**: https://www.youtube.com/watch?v=RAFZleZYxsc
+
 > **Link of Dataset Used in the Project**: https://www.kaggle.com/andrewmvd/us-hospital-locations
 
 <a href="https://www.postman.com/" target="_blank" rel="noreferrer"> <img src="https://res.cloudinary.com/postman/image/upload/t_team_logo/v1629869194/team/2893aede23f01bfcbd2319326bc96a6ed0524eba759745ed6d73405a3a8b67a8" alt="postman" width="200" height="200"/> </a> 
 - ### Postman
 **Postman** is a tool called "rest client" used to share, test, document, monitor APIs without the need for long codes.
+
+> **For Download Postman**: https://www.youtube.com/watch?v=MCPdfuzmyxY
 
 <a href="https://dotnet.microsoft.com/en-us/apps/aspnet/apis" target="_blank" rel="noreferrer"> <img src="https://www.mshowto.org/images/articles/2019/10/1-2.jpg" alt="aspnet" width="300" height="200"/> </a> 
 - ### ASP.NET WebAPI
@@ -29,6 +38,8 @@
 <a href="https://code.visualstudio.com/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png" alt="vscode" width="200" height="200"/> </a> 
 - ### Visual Studio Code
 **Visual Studio Code** is a source-code editor made by Microsoft for Windows, Linux and macOS. Features include support for debugging, syntax highlighting, intelligent code completion, snippets, code refactoring, and embedded Git. Users can change the theme, keyboard shortcuts, preferences, and install extensions that add additional functionality.
+
+> **For Download Visual Studio Code**: https://www.youtube.com/watch?v=V3o57MU5eoE
 
 <a href="https://openlayers.org/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/OpenLayers_logo.svg/2048px-OpenLayers_logo.svg.png" alt="vscode" width="200" height="200"/> </a> 
 - ### OpenLayers
