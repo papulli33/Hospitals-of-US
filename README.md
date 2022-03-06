@@ -122,9 +122,9 @@ This is the project directory, the files and folders we are interested in order 
 <p><a><img src="https://i.imgur.com/fNBMU0T.png" width="700" height="400"/></a></p>
 <p><a><img src="https://i.imgur.com/pjoEm4E.png" width="700" height="400"/></a></p>
 <p>Visualized the data in the latitude and longitude columns in the dataset and on the map using OpenLayers.</p>
-<p><a><img src="https://i.imgur.com/s3W9pIa.png" width="300" height="300"/></a></p>
+<p><a><img src="https://i.imgur.com/s3W9pIa.png" width="300" height="200"/></a></p>
 <p>We paid great attention to the user-oriented interface of the website. The user should be able to comprehend what he can do only as far as he sees while using the site. However, since it is an application that appeals to all age ranges, we have added a small usage for filtering.</p>
-<p><a><img src="https://i.imgur.com/fOeo2a7.png" width="300" height="300"/></a></p>
+<p><a><img src="https://i.imgur.com/fOeo2a7.png" width="350" height="300"/></a></p>
 <p>You can see a hospital icon at some points on the map, and red circles with a number at some points. The reason for this was that if all of the more than 7500 hospitals were displayed with icons, the user would not be able to press the icon they wanted comfortably at the nearby points and there would be confusion. We found the solution to this by connecting the dots and as the user zooms in, the dots will appear on the map.</p>
 
 - **Before:**
@@ -134,7 +134,7 @@ This is the project directory, the files and folders we are interested in order 
 <p><a><img src="https://i.imgur.com/TuT4ai8.png" width="500" height="400"/></a></p>
 <p>Since only seeing the data on the map does not make much sense for the user, we have also added the features of the hospitals to the site. In order for the user to find it easily, when he clicks on the relevant hospital icon, he will be able to find the information easily.</p>
 <p>User can change the map to be displayed from the button in navigation bar, the layers that can be selected are “Open Street Maps”, and “Bing Maps”.</p>
-<p><a><img src="https://i.imgur.com/bYTPGAa.png" width="150" height="50"/></a></p>
+<p><a><img src="https://i.imgur.com/bYTPGAa.png" width="236" height="45"/></a></p>
 <p><a><img src="https://i.imgur.com/wWSd0KI.png" width="250" height="150"/></a></p>
 <p><a><img src="https://i.imgur.com/plQJ1QW.png" width="300" height="300"/></a></p>
 <p>As described above, we added a filtering feature as it may take hours for the user to find the hospital with the desired feature.</p>
@@ -158,7 +158,7 @@ This is the project directory, the files and folders we are interested in order 
 <p><a><img src="https://i.imgur.com/UINAMJH.png" width="300" height="150"/></a></p>
 
 **Warning:** The only point you should pay attention to here is that you can apply a filter on top of a filter. If you are done with the filter, you can say “Reset Filters” and do a new action.
-<p><a><img src="https://i.imgur.com/9Nt0ark.png" width="200" height="70"/></a></p>
+<p><a><img src="https://i.imgur.com/9Nt0ark.png" width="336" height="59"/></a></p>
 
 <p>When there is too much data after filtering, it will take a lot of time to click on the icons on the map one by one to see them. Instead, you can click the "Filter Result in Table" button on the top right of the site and see the data on the table.</p>
 <p><a><img src="https://i.imgur.com/QLvlgcw.png" width="150" height="50"/></a></p>
@@ -174,13 +174,13 @@ This is the project directory, the files and folders we are interested in order 
 <p>No warning messages just for error messages. What the site is doing at that moment, for example, the information that the site is loading, or the information that the filter you have done is working successfully is displayed to the user.</p>
 
 - **a.** Loading icon</p>
-<p><a><img src="https://i.imgur.com/NTLBZ3j.png" width="100" height="130"/></a></p>
+<p><a><img src="https://i.imgur.com/NTLBZ3j.png" width="200" height="200"/></a></p>
 
 - **b.** Data successfully retrieved.</p>
-<p><a><img src="https://i.imgur.com/xC5mZbe.png" width="200" height="100"/></a></p>
+<p><a><img src="https://i.imgur.com/xC5mZbe.png" width="415" height="105"/></a></p>
 
 - **c.** Filters reset</p>
-<p><a><img src="https://i.imgur.com/5JuOK7e.png" width="200" height="100"/></a></p>
+<p><a><img src="https://i.imgur.com/5JuOK7e.png" width="415" height="105"/></a></p>
 
 - **d.** Filters successfully applied.</p>
-<p><a><img src="https://i.imgur.com/ZD79Lwo.png" width="200" height="100"/></a></p>
+<p><a><img src="https://i.imgur.com/ZD79Lwo.png" width="415" height="105"/></a></p>
