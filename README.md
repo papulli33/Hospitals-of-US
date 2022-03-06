@@ -128,10 +128,10 @@ This is the project directory, the files and folders we are interested in order 
 <p>You can see a hospital icon at some points on the map, and red circles with a number at some points. The reason for this was that if all of the more than 7500 hospitals were displayed with icons, the user would not be able to press the icon they wanted comfortably at the nearby points and there would be confusion. We found the solution to this by connecting the dots and as the user zooms in, the dots will appear on the map.</p>
 
 - **Before:**
-<p><a><img src="https://i.imgur.com/Pws0UVE.png" width="300" height="300"/></a></p>
+<p><a><img src="https://i.imgur.com/Pws0UVE.png" width="400" height="300"/></a></p>
 
 - **After:**
-<p><a><img src="https://i.imgur.com/TuT4ai8.png" width="400" height="400"/></a></p>
+<p><a><img src="https://i.imgur.com/TuT4ai8.png" width="500" height="400"/></a></p>
 <p>Since only seeing the data on the map does not make much sense for the user, we have also added the features of the hospitals to the site. In order for the user to find it easily, when he clicks on the relevant hospital icon, he will be able to find the information easily.</p>
 <p>User can change the map to be displayed from the button in navigation bar, the layers that can be selected are “Open Street Maps”, and “Bing Maps”.</p>
 <p><a><img src="https://i.imgur.com/bYTPGAa.png" width="150" height="50"/></a></p>
