@@ -13,36 +13,42 @@ In recent days, pandemic and COVID-19 have become one of the normals of our live
 
 ## Technologies used
 
-<a href="https://www.postgresql.org/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/1200px-Postgresql_elephant.svg.png" alt="postgresql" width="200" height="200"/> </a> 
 - ### PostgreSQL
+<a href="https://www.postgresql.org/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/1200px-Postgresql_elephant.svg.png" alt="postgresql" width="200" height="200"/> </a> 
+
 **PostgreSQL** is an open source and completely free object-relational database system with powerful features and benefits. Taking advantage of the security, storability and scalability features of the SQL language, PostgreSQL is also used as a database manager in many areas.
 
 > **For Download PostgreSQL**: https://www.youtube.com/watch?v=RAFZleZYxsc
 
 > **Link of Dataset Used in the Project**: https://www.kaggle.com/andrewmvd/us-hospital-locations
 
-<a href="https://www.postman.com/" target="_blank" rel="noreferrer"> <img src="https://res.cloudinary.com/postman/image/upload/t_team_logo/v1629869194/team/2893aede23f01bfcbd2319326bc96a6ed0524eba759745ed6d73405a3a8b67a8" alt="postman" width="200" height="200"/> </a> 
 - ### Postman
+<a href="https://www.postman.com/" target="_blank" rel="noreferrer"> <img src="https://res.cloudinary.com/postman/image/upload/t_team_logo/v1629869194/team/2893aede23f01bfcbd2319326bc96a6ed0524eba759745ed6d73405a3a8b67a8" alt="postman" width="200" height="200"/> </a> 
+
 **Postman** is a tool called "rest client" used to share, test, document, monitor APIs without the need for long codes.
 
 > **For Download Postman**: https://www.youtube.com/watch?v=MCPdfuzmyxY
 
-<a href="https://dotnet.microsoft.com/en-us/apps/aspnet/apis" target="_blank" rel="noreferrer"> <img src="https://www.mshowto.org/images/articles/2019/10/1-2.jpg" alt="aspnet" width="300" height="200"/> </a> 
 - ### ASP.NET WebAPI
-**ASP.NET WebAPI** is a framework used to create services that can communicate over the HTTP protocol that can be consumed by numerous different types of clients (browsers, mobile phones, tablets, pc, etc.).
+<a href="https://dotnet.microsoft.com/en-us/apps/aspnet/apis" target="_blank" rel="noreferrer"> <img src="https://www.mshowto.org/images/articles/2019/10/1-2.jpg" alt="aspnet" width="300" height="200"/> </a> 
 
-<a href="https://angular.io/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/5/50/Angular-logo.png" width="200" height="200"/> </a> 
+**ASP.NET WebAPI** is a framework used to create services that can communicate over the HTTP protocol that can be consumed by numerous different types of clients (browsers, mobile phones, tablets, pc, etc.).
+ 
 - ### Angular
+<a href="https://angular.io/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/5/50/Angular-logo.png" width="200" height="200"/> </a>
+
 **Angular** is an open-source JavaScript based MVC library provided by Google and developers around the world. In summary, it is a structural framework for dynamic web applications.
 
-<a href="https://code.visualstudio.com/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png" alt="vscode" width="200" height="200"/> </a> 
 - ### Visual Studio Code
+<a href="https://code.visualstudio.com/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png" alt="vscode" width="200" height="200"/> </a> 
+
 **Visual Studio Code** is a source-code editor made by Microsoft for Windows, Linux and macOS. Features include support for debugging, syntax highlighting, intelligent code completion, snippets, code refactoring, and embedded Git. Users can change the theme, keyboard shortcuts, preferences, and install extensions that add additional functionality.
 
 > **For Download Visual Studio Code**: https://www.youtube.com/watch?v=V3o57MU5eoE
 
-<a href="https://openlayers.org/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/OpenLayers_logo.svg/2048px-OpenLayers_logo.svg.png" alt="vscode" width="200" height="200"/> </a> 
 - ### OpenLayers
+<a href="https://openlayers.org/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/OpenLayers_logo.svg/2048px-OpenLayers_logo.svg.png" alt="vscode" width="200" height="200"/> </a> 
+
 **OpenLayers** is a simple open-source JavaScript library with no server-side dependencies that allows us to develop functional map applications to display map data in most modern web browsers.
 
 ## Back-End Setup 
