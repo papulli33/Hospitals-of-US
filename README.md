@@ -8,8 +8,6 @@ In recent days, pandemic and COVID-19 have become one of the normals of our live
  This project was designed and created for you to get information about hospitals. Its purpose is to make people's lives easier. It allows you to open it before going to the hospital and check the status of the hospitals from this application, or when you go to a city you do not know, you get information about the address, type, status of the hospitals in that region.
  
  Although the project does not work with up-to-date data at the moment, we plan to develop it and bring it to that level in the future.
- 
-> **Website Link**: https://hospitals-hacettepe.herokuapp.com/
 
 ## Technologies used
 
